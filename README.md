@@ -5,24 +5,26 @@ This project is a seed for AngularJS applications based on Materal Design.
 ## Infomation
 This boilerplate is based on angluar/material-start [https://github.com/angular/material-start] and ng-boilerplate [https://github.com/ngbp/ngbp].
 
-design things are from **material-start*** and bulid and test things from ngbp. so if you want to know how to bulid and test , just visit [https://github.com/ngbp/ngbp].
+design things are from **material-start** and bulid and test things from **ngbp**. so if you want to know how to bulid and test , just visit [https://github.com/ngbp/ngbp].
 
 ## Getting Started
 
 To get you started you can simply clone the angular-material-boilerplate repository and install the dependencies:
 
-1. Clone
+**Clone**
 Clone the angular-seed repository using [git][git]:
 
 ```
 git clone https://github.com/yuby/angular-material-boilerplate.git
 ```
-2. Packages install
+
+**Packages install**
 
 ```
 npm install
 ```
-3. Packages Update
+
+**Packages Update**
 ```
 npm update
 ```
