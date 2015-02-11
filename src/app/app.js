@@ -13,12 +13,31 @@ angular.module( 'ngBoilerplate', [
 .run( function run () {
 })
 
-.controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
+.controller( 'AppCtrl', function AppCtrl ( $scope, $location , $mdSidenav) {
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = toState.data.pageTitle + ' | ngBoilerplate' ;
+      $scope.pageTitle = toState.data.pageTitle + ' | Angualr Material' ;
     }
   });
+  $scope.menus = [
+    {
+      name : "Home",
+      url : "home"
+    },
+    {
+      name : "About",
+      url : "about"
+    }
+  ];
+
+  $scope.toggleSidenav = function() {
+    $mdSidenav('left').toggle();
+  };
+
+  $scope.closeNav = function(){
+    alert('aaa');
+  }
+  
 })
 
 ;

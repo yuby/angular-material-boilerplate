@@ -1,7 +1,46 @@
-<section layout="row" layout-sm="column" layout-align="center center">
-      <md-button class="md-raised">Button</md-button>
-      <md-button class="md-raised md-primary">Primary</md-button>
-      <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
-      <md-button class="md-raised md-warn">Warn</md-button>
-      <div class="label">raised</div>
-    </section>
+<div layout="row" layout-sm="column" class="content-wrap">
+  <div flex>
+    <h2>List View Left</h2>
+    <md-content>
+        <md-list>
+          <md-item ng-repeat="item in todos">
+            <md-item-content>
+              <div class="md-tile-left">
+                  <i class="fa fa-user"></i>
+                  <!-- <img ng-src="{{item.face}}" class="face" alt="{{item.who}}"> -->
+              </div>
+              <div class="md-tile-content">
+                <h3>{{item.what}}</h3>
+                <h4>{{item.who}}</h4>
+                <p>
+                  {{item.notes}}
+                </p>
+              </div>
+            </md-item-content>
+          </md-item>
+        </md-list>
+      </md-content>
+  </div>
+  <div flex>
+    <h2>List View Right</h2>
+    <md-content>
+        <md-list>
+          <md-item ng-repeat="item in todos">
+            <md-item-content>
+              <div class="md-tile-left">
+                  <i class="fa fa-user"></i>
+                  <!-- <img ng-src="{{item.face}}" class="face" alt="{{item.who}}"> -->
+              </div>
+              <div class="md-tile-content">
+                <h3>{{item.what}}</h3>
+                <h4>{{item.who}}</h4>
+                <p>
+                  {{item.notes}}
+                </p>
+              </div>
+            </md-item-content>
+          </md-item>
+        </md-list>
+      </md-content>
+  </div>
+</div>

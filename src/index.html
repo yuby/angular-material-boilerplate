@@ -15,9 +15,24 @@
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
 
   </head>
-  <body>
-
-    <div class="container" ui-view="main"></div>
-    
+  <body layout="column">
+    <md-toolbar layout="row">
+      <md-button ng-click="toggleSidenav('left')" class="menuBtn" aria-label="menus"><i class="fa fa-bars"></i></md-button>
+      <h1>AngularJS Material default App</h1>
+    </md-toolbar>
+    <div layout="row" flex>
+      <md-sidenav md-component-id="left" class="md-sidenav-left" md-whiteframe-z2 ng-isolate-scope>
+        <md-list class="side-menus">
+          <md-item ng-repeat="it in menus">
+            <md-item-content>
+              <md-button  ui-sref={{it.url}} >
+                {{it.name}}
+              </md-button>
+            </md-item-content>
+          </md-item>
+        </md-list>
+      </md-sidenav>
+      <md-content layout="row" class="container md-padding" ui-view="main"></md-content>
+    </div>
   </body>
 </html>
