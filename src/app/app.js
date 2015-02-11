@@ -33,10 +33,6 @@ angular.module( 'ngBoilerplate', [
   $scope.toggleSidenav = function() {
     $mdSidenav('left').toggle();
   };
-
-  $scope.closeNav = function(){
-    alert('aaa');
-  }
   
 })
 
