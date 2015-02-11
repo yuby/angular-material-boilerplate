@@ -4,7 +4,7 @@
     <md-content>
         <md-list>
           <md-item ng-repeat="item in todos">
-            <md-item-content>
+            <md-item-content class="list-content">
               <div class="md-tile-left">
                   <i class="fa fa-user"></i>
                   <!-- <img ng-src="{{item.face}}" class="face" alt="{{item.who}}"> -->
@@ -16,6 +16,7 @@
                   {{item.notes}}
                 </p>
               </div>
+              <md-button class="md-raised" ng-click="showGridBottomSheet($event)">Button</md-button>
             </md-item-content>
           </md-item>
         </md-list>
@@ -23,7 +24,7 @@
   </div>
   <div flex>
     <h2>List View Right</h2>
-    <md-content>
+    <md-content class="list-content">
         <md-list>
           <md-item ng-repeat="item in todos">
             <md-item-content>
@@ -38,6 +39,7 @@
                   {{item.notes}}
                 </p>
               </div>
+              <md-button class="md-raised md-primary" ng-click="showGridBottomSheet($event)">Button</md-button>
             </md-item-content>
           </md-item>
         </md-list>

@@ -16,7 +16,7 @@ angular.module( 'ngBoilerplate.home', [
   });
 })
 
-.controller( 'HomeCtrl', function HomeController( $scope ) {
+.controller( 'HomeCtrl', function HomeController( $scope, $mdBottomSheet) {
   $scope.todos = [
         {
          what: 'Brunch this weekend?',
@@ -49,6 +49,25 @@ angular.module( 'ngBoilerplate.home', [
           notes: " I'll be in your neighborhood doing errands"
         }
     ];
+  $scope.showGridBottomSheet = function($event){
+    $mdBottomSheet.show({
+        templateUrl: 'home/templates/bottomSheetTemplate.tpl.html',
+        controller: 'BottomSheetCtrl',
+        targetEvent: $event
+      });
+  };
+})
+.controller('BottomSheetCtrl', function($scope, $mdBottomSheet) {
+  $scope.items = [
+    { name: 'Share', icon: 'fa-share-square-o' },
+    { name: 'Upload', icon: 'fa-cloud-upload' },
+    { name: 'Copy', icon: 'fa-files-o' },
+    { name: 'Print this page', icon: 'fa-print' }
+  ];
+  $scope.listItemClick = function($index) {
+    var clickedItem = $scope.items[$index];
+    $mdBottomSheet.hide(clickedItem);
+  };
 })
 
 ;
