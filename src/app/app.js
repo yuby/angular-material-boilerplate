@@ -33,7 +33,7 @@ angular.module( 'ngBoilerplate', [
   $scope.toggleSidenav = function() {
     $mdSidenav('left').toggle();
   };
-  
+
 })
 
 ;
