@@ -1,6 +1,6 @@
 # AngularJS - Material - Boilerplate
 
-This project is a seed for AngularJS applications based on Materal Design.
+This project is a seed for AngularJS applications with Materal Design.
 
 ## Infomation
 This boilerplate is based on angluar/material-start [https://github.com/angular/material-start] and ng-boilerplate [https://github.com/ngbp/ngbp].
@@ -13,9 +13,8 @@ AngularJS is one of the hottest structural framework for dynamic web apps base o
 AngularJS is for Single-page-application, so if you want to build new SPA, just try it. and visit Angular site to get more information.
 https://docs.angularjs.org/guide
 
-if yor are a Korean, just visit my blog, there are some article translated in Korean. it can be good entry point to learn AngularJS.
 앵귤러를 처음 접하시거나 앵귤러에 대해서 알고 싶으신 분은 제 블로그에 앵귤러의 개발자 가이드를 번역한 부분이 있습니다. 들어오셔서 읽어보시면 배우시는데 도움이 될 것 같습니다.
-http://yubylab.tistory.com
+http://yubylab.tistory.com/category/Javascript%20Lab./Learn%20AngularJS
 
 **Material Design**
 Material design is Google's visual language for device such as desktop, smartphone, smart TV ..
